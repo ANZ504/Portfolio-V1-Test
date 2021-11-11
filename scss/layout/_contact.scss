@@ -1,0 +1,166 @@
+// CONTACT
+#contact {
+  padding: 5rem 0;
+  background-color: $black;
+
+
+  .lead {
+    margin-bottom: -0.25rem;
+    text-align: center;
+    font-size: 1.85rem;
+    font-weight: 700;
+  }
+
+  p {
+    text-align: center;
+    color: $dark-white;
+    font-size: 1.65rem;
+    font-weight: 300;
+  }
+
+  .text-animate {
+    font-weight: 700;
+  }
+  .formulario {
+    width: 852px;
+    height: 450px;
+    margin: 0 auto;
+    color: $black;
+    font-size: 18px;
+    text-align: center;
+    background-color: $dark-white;
+    box-shadow: 10px 10px 24px 0px rgba(33, 33, 33, 1);
+
+    .formulario__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+
+    &__title {
+      text-align: start;
+      margin-left: 70px;
+      padding: 50px 0 1px 0;
+    }
+    &__title--mensaje {
+        text-align: start;
+        margin-left: 70px;
+      padding: 50px 0 1px 0;
+    }
+
+    input {
+      width: 290px;
+      height: 39px;
+        
+      border: 2px solid #c4c4c4;
+      outline: none;
+    }
+    textarea {
+      width: 290px;
+      height: 39px;
+      margin-left: 100px;
+      border: 2px solid #c4c4c4;
+      resize: none;
+      padding: 10px 0 0 10px;
+    }
+    #mensaje {
+      text-align: start;
+      margin: 0 auto;
+      height: 280px;
+    }
+    input[type="submit"] {
+      width: 178px;
+      height: 38px;
+      color: $dark-white;
+      background-color: $green;
+      border: none;
+      outline: none;
+      &:hover {
+        cursor: pointer;
+        box-shadow: inset 5px 5px 24px 10px rgba(33, 33, 33, 0.25);
+      }
+    }
+    &__enviar {
+      margin: 20px 0 0 -10px;
+      text-align: center;
+    }
+  }
+
+  .contact__social {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 2rem;
+
+    a {
+      color: $dark-white;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+}
+
+// FOOTER
+#footer {
+  padding: 0.5rem 0;
+  background-color: $black;
+  text-align: center;
+  color: $dark-white;
+
+  p {
+    font-size: 0.85rem;
+
+    a {
+      color: $dark-white;
+      text-decoration: underline;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $green;
+      }
+    }
+
+    .fa-heart {
+      color: $green;
+    }
+  }
+}
+
+// RESPONSIVE
+@media (min-width: 47.9em) {
+  #contact {
+    .lead {
+      font-size: 2.05rem;
+    }
+
+    p {
+      font-size: 1.85rem;
+    }
+  }
+}
+
+@media (min-width: 61.9em) {
+  #contact {
+    .lead {
+      font-size: 2.25rem;
+    }
+
+    p {
+      font-size: 2.05rem;
+    }
+  }
+}
+
+@media (min-width: 74.9em) {
+  #contact {
+    .lead {
+      font-size: 2.45rem;
+    }
+
+    p {
+      font-size: 2.25rem;
+    }
+  }
+}

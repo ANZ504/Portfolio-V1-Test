@@ -1,0 +1,54 @@
+#portfolio {
+    padding: 5rem 0;
+    
+    text-align: center;
+    
+    hr {
+        margin-bottom: 3rem;
+    }
+    
+    figure {
+        position: relative;
+        
+        img {
+            width: 100%;
+        }
+        
+        figcaption {
+            position: absolute;
+            top: .75rem;
+            right: .75rem;
+            bottom: .75rem;
+            left: .75rem;
+            background-color: $green;
+            padding-top: 4rem;
+            opacity: 0;
+            transition: all .5s;
+            
+            color: $black;
+            
+            &:hover {
+                background-color: rgba($green, 0.6);
+                opacity: 1;
+            }
+            
+            h3 {
+                text-transform: uppercase;
+            }
+            
+            p {
+                margin-bottom: 3rem;
+            }
+            
+            a {
+                font-size: 2rem;
+                color: $dark-white;
+                transition: all 0.3s;
+                
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+    }
+}

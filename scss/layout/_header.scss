@@ -1,0 +1,276 @@
+// MENU RESPONSIVE
+.menu-responsive {
+  background-color: $black;
+  padding: 2rem 0;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      width: 100%;
+      padding: 1.5rem 0;
+
+      text-align: center;
+
+      a {
+        font-size: 1.125rem;
+        color: $dark-white;
+        transition: all 0.3s;
+
+        &:hover,
+        &:active {
+          color: $green;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.header__top--responsive {
+  ul {
+    float: right;
+
+      .menu-bars {
+        font-size: 1.95rem;
+        color: $white;
+        transition: all 0.3s;
+
+        &:hover,
+        &:active {
+          
+          color: $green;
+        }
+    }
+  }
+}
+
+// HEADER
+header {
+  height: 100vh;
+  background-color: $black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.header__top {
+  padding-top: 1.5rem;
+  margin-bottom: 4.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header__top-brand {
+  color: $dark-white;
+
+  .bold {
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 0.4rem;
+  }
+
+  hr {
+    margin: 0;
+  }
+}
+
+.header__top-nav {
+  ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin-right: 2rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        font-size: 1.25rem;
+        color: $white;
+        line-height: 2.5rem;
+        font-weight: 300;
+        transition: all 0.3s;
+        border-bottom: 2px solid transparent;
+
+        &:hover,
+        &:active {
+          border-bottom: 2px solid $green;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+}
+
+.header__content {
+  width: 80%;
+  margin: 0 auto;
+  color: $dark-white;
+  font-size: 1.4rem;
+  text-align: center;
+  
+  .header__p--p2{
+      color: $dark-white;
+    p {
+        line-height: 2rem;
+    
+        &:first-child {
+          line-height: 2.4rem;
+        }
+      }
+  }
+
+
+  .btn {
+    margin-top: 2.2rem;
+  }
+}
+
+.header__arrow {
+  margin-top: 4.85rem;
+
+  text-align: center;
+
+  a {
+    color: $white;
+    font-size: 1.5rem;
+    i {
+      animation: bounce 2s infinite;
+    }
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40%,
+  43% {
+    transform: translateY(-30px);
+  }
+
+  75% {
+    transform: translateY(-20px);
+  }
+}
+#volver__arriba {
+  width: 70px;
+  height: 70px;
+  background: $black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  position: fixed;
+  bottom: 20px;
+  cursor: pointer;
+  display: none;
+  margin-left: 93vw;
+
+  &:hover{
+      background: $green;
+  }
+}
+
+// Responsive Layout
+@media (min-width: 47.9em) {
+  .header__top--responsive {
+    margin-top: -0.75rem;
+  }
+
+  .header__top {
+    padding-top: 2.5rem;
+    margin-bottom: 10rem !important;
+  }
+
+  .header__content {
+    font-size: 2rem;
+
+    .btn {
+      padding: 0.6rem 1.7rem;
+    }
+  }
+
+  .header__arrow {
+    margin-top: 10.85rem;
+  }
+}
+
+@media (min-width: 61.9em) {
+  .header__top {
+    margin-bottom: 16rem;
+  }
+
+  .header__top-brand {
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 300;
+      margin-bottom: 0.4rem;
+    }
+
+    hr {
+      width: 3.7em;
+    }
+  }
+
+  .header__content {
+    width: 36%;
+    font-size: 2.25rem !important;
+
+    p {
+      line-height: 2.45rem;
+    }
+
+    .btn {
+      margin-top: 2rem !important;
+    }
+  }
+
+  .header__arrow {
+    margin-top: 8rem !important;
+  }
+}
+
+@media (min-width: 74.9em) {
+  .header__top {
+    margin-bottom: 9.5rem;
+  }
+
+  .header__content {
+    font-size: 3rem;
+
+    p {
+      line-height: 2.95rem;
+    }
+
+    .btn {
+      margin-top: 4rem;
+
+      font-size: 1.2rem;
+    }
+  }
+
+  .header__arrow {
+    margin-top: 12rem;
+  }
+}
